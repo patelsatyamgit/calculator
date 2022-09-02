@@ -9,12 +9,12 @@ let realtimeanswerevalue=[];
 clear.addEventListener("click" ,() =>
 {
     realtimeanswerevalue=[''];
-    answerearea.innerHTML='';
+    answerearea.innerHTML=0;
     curretInput.className='curretInput';
-    curretInput.style.textAlign='right';
-    curretInput.style.color='white';
     answerearea.className='answerearea';
     answerearea.style.color='rgba(150,150,150,0.87)';
+    location.reload();
+    
 
 })
 
@@ -40,8 +40,8 @@ buttons.forEach((btnn) => {
 
     if(btnn.id.match('evaluate'))
     {
-        curretInput.classList='answerearea';
-        answerearea.classList='currentInput'
+        curretInput.className='answerearea';
+        answerearea.className='currentInput'
         answerearea.style.color='while';
     }
 

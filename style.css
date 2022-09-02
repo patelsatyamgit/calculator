@@ -27,13 +27,13 @@ body{
 {
     width: 100%;
     margin: 3vh 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(2,minmax(40px,auto));
     word-wrap: break-word;
     padding: 20px;
     border-bottom: 1px rgba(128, 128, 128, 0.116) solid;
-    overflow: hidden;
+    border-left: 1px rgba(128, 128, 128, 0.116) solid;
+    border-right: 1px rgba(128, 128, 128, 0.116) solid;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.6);
+
 }
 .display .currentInput{
     text-align: right;
@@ -42,17 +42,20 @@ body{
     font-size: xx-large;
     line-height: 2;
     word-wrap: break-word;
-}
+    overflow: hidden;
+    }
 .display .answerearea
 {
-    margin-top: 10px;
+    
     text-align: right;
     color:white;
-    height: 7px;
-    line-height: 3px;
+    height: 7vh;
+    line-height: 3vh;
     font-size: large;
+    overflow: hidden;
 }
 .keypad-btn {
+    margin-top: 55px;
     display: grid;
     grid:repeat(5,70px)/repeat(4,70px);
     grid-row-gap: 20px;
